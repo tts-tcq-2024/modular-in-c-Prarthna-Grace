@@ -5,31 +5,24 @@
 
 #include <stdio.h>
 
-#define COLOR_PAIRS 25
+enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
-// Major colors
-const char *MAJOR_COLORS[10] = {
-    "White", "Red", "Black", "Yellow", "Violet",
+const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
+int numberOfMajorColors =
+    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+const char* MinorColorNames[] = {
     "Blue", "Orange", "Green", "Brown", "Slate"
 };
+const int MAX_COLORPAIR_NAME_CHARS = 16;
+int numberOfMinorColors =
+    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-// Minor colors
-const char *MINOR_COLORS[10] = {
-    "White", "Red", "Black", "Yellow", "Violet",
-    "Blue", "Orange", "Green", "Brown", "Slate"
-};
-
-// Color code mapping
-const char *COLOR_CODE_MAP[COLOR_PAIRS][2] = {
-    {"White", "Blue"}, {"White", "Orange"}, {"White", "Green"},
-    {"White", "Brown"}, {"White", "Slate"}, {"Red", "Blue"},
-    {"Red", "Orange"}, {"Red", "Green"}, {"Red", "Brown"},
-    {"Red", "Slate"}, {"Black", "Blue"}, {"Black", "Orange"},
-    {"Black", "Green"}, {"Black", "Brown"}, {"Black", "Slate"},
-    {"Yellow", "Blue"}, {"Yellow", "Orange"}, {"Yellow", "Green"},
-    {"Yellow", "Brown"}, {"Yellow", "Slate"}, {"Violet", "Blue"},
-    {"Violet", "Orange"}, {"Violet", "Green"}, {"Violet", "Brown"},
-    {"Violet", "Slate"}
-};
+typedef struct {
+    enum MajorColor majorColor;
+    enum MinorColor minorColor;
+} ColorPair;
 
 #endif // _COLOR_CONSTANTS_H
