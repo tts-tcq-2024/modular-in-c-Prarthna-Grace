@@ -1,6 +1,3 @@
-#ifndef COLOR_CONSTANTS_H
-#define COLOR_CONSTANTS_H
-
 #include <stdio.h>
 #include <assert.h>
 
