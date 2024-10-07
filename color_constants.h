@@ -1,9 +1,8 @@
 // color_constants.h
-
-#ifndef color_constants_H
-#define color_constants_H
-
 #include <stdio.h>
+#include <assert.h> 
+#include <colour_number_pair.c>
+#include <main.c>
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
@@ -24,5 +23,3 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
-
-#endif // _COLOR_CONSTANTS_H
