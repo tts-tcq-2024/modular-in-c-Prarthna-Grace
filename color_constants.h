@@ -1,12 +1,13 @@
-// color_constants.h
-#include<stdio.h>
-#include<assert.h> 
-#include<colour_number_pair.c>
-#include<main.c>
+#ifndef COLOR_CONSTANTS_H
+#define COLOR_CONSTANTS_H
+
+#include <stdio.h>
+#include <assert.h>
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
+// Arrays of color names
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
 };
@@ -23,3 +24,8 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
+
+// Function prototypes
+ColorPair GetColorFromPairNumber(int pairNumber);
+int GetPairNumberFromColor(const ColorPair* colorPair);
+void ColorPairToString(const ColorPair* colorPair, char* buffer);
