@@ -1,8 +1,8 @@
 // color_constants.h
-#include <stdio.h>
-#include <assert.h> 
-#include <colour_number_pair.c>
-#include <main.c>
+#include<stdio.h>
+#include<assert.h> 
+#include<colour_number_pair.c>
+#include<main.c>
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
