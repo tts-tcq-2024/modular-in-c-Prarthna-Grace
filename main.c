@@ -3,6 +3,9 @@
 #include"color_constants.h"
 #include"colour_number_pair.h"
 
+// Function prototype
+void runTests();
+
 int main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
