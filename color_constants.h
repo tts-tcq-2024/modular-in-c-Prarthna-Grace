@@ -5,6 +5,12 @@
 enum MajorColor { WHITE, RED, BLACK, YELLOW, VIOLET };
 enum MinorColor { BLUE, ORANGE, GREEN, BROWN, SLATE };
 
+// Struct for color pairs
+typedef struct {
+    enum MajorColor majorColor;
+    enum MinorColor minorColor;
+} ColorPair;
+
 // Arrays of color names
 extern const char* MajorColorNames[];
 extern const char* MinorColorNames[];
