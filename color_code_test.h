@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <assert.h> 
+#ifndef COLOR_CODE_TEST_H
+#define COLOR_CODE_TEST_H
+
 #include "color_constants.h" 
 #include"colour_number_pair.h"
 
@@ -28,3 +29,4 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+#endif // COLOR_CODE_TEST_H
