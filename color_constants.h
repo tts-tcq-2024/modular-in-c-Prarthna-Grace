@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include"color_number_pair.h"
+#include"color_code_test.h"
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
