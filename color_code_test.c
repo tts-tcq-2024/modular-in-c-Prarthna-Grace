@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h> 
-#include <color_constants.h> 
-#include"color_number_pair.h"
+#include "color_constants.h" 
+#include"colour_number_pair.h"
 
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
