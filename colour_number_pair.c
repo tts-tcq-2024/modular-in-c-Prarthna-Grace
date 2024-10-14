@@ -2,6 +2,7 @@
 #include <assert.h>
 #include "color_constants.h"
 #include"color_number_pair.h"
+#include"color_code_test.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
