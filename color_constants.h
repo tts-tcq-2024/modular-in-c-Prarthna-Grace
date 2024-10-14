@@ -1,4 +1,5 @@
-#include"color_number_pair.h"
+#ifndef COLOR_CONSTANTS_H
+#define COLOR_CONSTANTS_H
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
@@ -25,3 +26,5 @@ typedef struct {
 ColorPair GetColorFromPairNumber(int pairNumber);
 int GetPairNumberFromColor(const ColorPair* colorPair);
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
+
+#endif // COLOR_CONSTANTS_H
